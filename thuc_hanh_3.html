@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành 3</title>
+</head>
+<body>
+<h1>Tìm giá trị nhỏ nhất của mảng</h1>
+<script>
+    function timso(arr){
+
+        if (arr == 0)
+            return -1;
+            let min = arr[0];
+            let minIndex = 0;
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] <= min){
+                    min = arr[i];
+                    minIndex = i;
+                }
+            }
+            return minIndex;
+        }
+
+    let arr1 = [3,5,1,8,-7,8];
+    let arr2 = [7,12,6,9,20,89];
+    let arr3 = [];
+    let arr4 = [0,0,0,0,0,0]
+
+    document.write(`Vị trí nhỏ nhất mảng 1 = [${arr1}] là: ` + timso(arr1) + "</br>");
+    document.write(`Vị trí nhỏ nhất mảng 2 = [${arr2}] là: ` + timso(arr2) + "</br>");
+    document.write(`Vị trí nhỏ nhất mảng 3 = [${arr3}] là: ` + timso(arr3) + "</br>");
+    document.write(`Vị trí nhỏ nhất mảng 4 = [${arr4}] là: ` + timso(arr4) + "</br>");
+</script>
+</body>
+</html>
